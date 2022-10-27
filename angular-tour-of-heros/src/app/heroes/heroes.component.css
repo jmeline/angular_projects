@@ -1,0 +1,12 @@
+
+.container {
+  display: flex;
+}
+
+.heroes-item {
+  width: 50%;
+}
+
+.hero-details-item {
+  width: 50%;
+}
