@@ -1,16 +1,4 @@
 /* Application-wide Styles */
-.container {
-  display: flex;
-}
-
-.heroes {
-  width: 50%;
-}
-
-.messages {
-  width: 50%;
-}
-
 
 h1 {
   color: #369;
