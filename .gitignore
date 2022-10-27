@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+angular-tour-of-heros/.angular/cache/13.3.9
+angular-tour-of-heros/.vscode
