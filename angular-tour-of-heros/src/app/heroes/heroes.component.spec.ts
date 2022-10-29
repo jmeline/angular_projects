@@ -1,4 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Observable, of } from 'rxjs';
+import { Hero } from '../hero';
+import { HeroService } from '../hero.service';
+import { MessageService } from '../message.service';
+import { HEROES } from '../mock-heroes';
 
 import { HeroesComponent } from './heroes.component';
 
@@ -7,8 +12,12 @@ describe('HeroesComponent', () => {
   let fixture: ComponentFixture<HeroesComponent>;
 
   beforeEach(async () => {
+    const getHeroes = () => of(HEROES);
     await TestBed.configureTestingModule({
-      declarations: [ HeroesComponent ]
+      declarations: [ HeroesComponent ],
+      providers: [
+        { provide: HeroService, useValue: { getHeroes } }
+      ]
     })
     .compileComponents();
   });
